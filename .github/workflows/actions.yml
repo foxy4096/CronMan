@@ -2,7 +2,7 @@ name: run send_email.py
 
 on:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '0 8 * * *'
 
 jobs:
   build:
