@@ -1,4 +1,4 @@
-name: run send_email.py
+name: run check_website.py
 
 on:
   schedule:
