@@ -30,5 +30,6 @@ jobs:
           WEBSITE_URL: ${{ secrets.WEBSITE_URL }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          RECEIVER: ${{ secrets.RECEIVER }}
         # run: python send_email.py
         run : python check_website.py

@@ -16,7 +16,8 @@ except Exception as e:
 # SOME EMAIL CONF
 EMAIL = os.environ.get("EMAIL")
 PASSWORD = os.environ.get("PASSWORD")
-RECEIVER = "adityapriyadarshi669@gmail.com"
+RECEIVER = os.environ.get("RECEIVER")
+
 
 MESSAGE = f"""
     Hi,
