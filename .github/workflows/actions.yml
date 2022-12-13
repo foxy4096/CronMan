@@ -28,4 +28,5 @@ jobs:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
-        run: python send_email.py
+        # run: python send_email.py
+        run : python check_website.py
