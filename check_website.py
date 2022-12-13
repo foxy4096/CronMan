@@ -2,14 +2,12 @@ import requests as req
 import yagmail
 import os
 
-client = req.session()
-
 url = os.environ.get("WEBSITE_URL", default="https://www.vbcvjsr.in")
 MAX_TIMEOUT = int(os.environ.get("MAX_TIMEOUT", default="30"))
 is_working = False
 
 try:
-    with client.get(url=url, headers={"REASON": "NEED TO CHECK IF YOUR WEBSITE IS WORKING OR NOT."}, timeout=MAX_TIMEOUT) as response:
+    with req.get(url=url, headers={"REASON": "NEED TO CHECK IF YOUR WEBSITE IS WORKING OR NOT."}, timeout=MAX_TIMEOUT) as response:
         print(response.ok)
         is_working = response.ok
 except Exception as e:
