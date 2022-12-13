@@ -27,6 +27,7 @@ jobs:
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          WEBSITE_URL: ${{ secrets.WEBSITE_URL }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
         # run: python send_email.py
