@@ -29,4 +29,7 @@ MESSAGE = f"""
     """
 
 yag = yagmail.SMTP(user=EMAIL, password=PASSWORD)
+
+print("SENDING EMAIL 🕑")
 yag.send(to=RECEIVER, subject=f"Website Status: {'WORKING ✅' if is_working else 'NOT WORKING ❌'}", contents=MESSAGE)
+print("EMAIL SENT ✅")
